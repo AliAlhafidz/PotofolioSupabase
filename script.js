@@ -3,7 +3,7 @@
 // Ganti dua nilai di bawah ini dengan milikmu sendiri.
 // Dapatkan dari: Supabase Dashboard > Project Settings > API
 // ======================================================
-const SUPABASE_URL = "https://ljssqvrewfgjbqrfrcgr.supabase.co/rest/v1/";
+const SUPABASE_URL = "https://ljssqvrewfgjbqrfrcgr.supabase.co";
 const SUPABASE_ANON_KEY = "sb_publishable_dODPCVYztcaBAE-YPnTIVA_RTozZTRV";
 
 const supabaseClient = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
