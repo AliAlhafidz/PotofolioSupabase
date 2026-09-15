@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ali Alhafidz — Portofolio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo">Ali Alhafidz</div>
+    <nav>
+      <a href="#about">Tentang</a>
+      <a href="#skills">Skill</a>
+      <a href="#projects">Proyek</a>
+      <a href="#guestbook">Buku Tamu</a>
+      <a href="#contact">Kontak</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Halo, saya <span>Ali Alhafidz</span></h1>
+    <p>Siswa SMK yang suka membangun website dengan PHP, MySQL, HTML, CSS, dan JavaScript.</p>
+    <a href="#projects" class="btn">Lihat Proyek</a>
+  </section>
+
+  <section id="about" class="section">
+    <h2>Tentang Saya</h2>
+    <p>Saya adalah siswa SMK jurusan Rekayasa Perangkat Lunak yang sedang belajar membangun aplikasi web,
+       termasuk mengerjakan proyek Ujian Kompetensi Keahlian (UKK) berupa Sistem Informasi Perpustakaan.
+       Halaman ini dibuat sebagai latihan menghubungkan website ke Supabase, GitHub, dan Vercel.</p>
+  </section>
+
+  <section id="skills" class="section alt">
+    <h2>Skill</h2>
+    <div class="skills-grid">
+      <div class="skill-card">PHP Native</div>
+      <div class="skill-card">MySQL</div>
+      <div class="skill-card">HTML5</div>
+      <div class="skill-card">CSS3</div>
+      <div class="skill-card">JavaScript</div>
+      <div class="skill-card">Git & GitHub</div>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <h2>Proyek</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <h3>Sistem Informasi Perpustakaan</h3>
+        <p>Aplikasi manajemen perpustakaan untuk proyek UKK, dibangun dengan PHP native dan MySQL.</p>
+      </div>
+      <div class="project-card">
+        <h3>Portofolio Ini</h3>
+        <p>Website latihan untuk mencoba alur deploy: GitHub → Vercel, dan koneksi ke database Supabase.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="guestbook" class="section alt">
+    <h2>Buku Tamu (Uji Coba Supabase)</h2>
+    <p class="muted">Isi form di bawah ini untuk menguji apakah website sudah terhubung ke Supabase.</p>
+
+    <form id="guestbook-form">
+      <input type="text" id="name-input" placeholder="Nama kamu" required>
+      <textarea id="message-input" placeholder="Tulis pesan..." required></textarea>
+      <button type="submit" class="btn">Kirim</button>
+    </form>
+
+    <p id="form-status"></p>
+
+    <div id="messages-list" class="messages-list">
+      <!-- Pesan dari Supabase akan muncul di sini -->
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Kontak</h2>
+    <p>Email: ali.alhafidz@example.com</p>
+    <p>GitHub: github.com/ali-alhafidz</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Ali Alhafidz. Dibuat untuk latihan.</p>
+  </footer>
+
+  <!-- Supabase JS SDK dari CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
