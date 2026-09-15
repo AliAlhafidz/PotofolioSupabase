@@ -3,8 +3,8 @@
 // Ganti dua nilai di bawah ini dengan milikmu sendiri.
 // Dapatkan dari: Supabase Dashboard > Project Settings > API
 // ======================================================
-const SUPABASE_URL = "GANTI_DENGAN_SUPABASE_URL_KAMU";
-const SUPABASE_ANON_KEY = "GANTI_DENGAN_SUPABASE_ANON_KEY_KAMU";
+const SUPABASE_URL = "https://ljssqvrewfgjbqrfrcgr.supabase.co/rest/v1/";
+const SUPABASE_ANON_KEY = "sb_publishable_dODPCVYztcaBAE-YPnTIVA_RTozZTRV";
 
 const supabaseClient = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
